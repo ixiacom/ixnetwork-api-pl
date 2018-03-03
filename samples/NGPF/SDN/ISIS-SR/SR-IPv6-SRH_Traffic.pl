@@ -1,6 +1,6 @@
 ################################################################################
 #                                                                              #
-#    Copyright © 1997 - 2017 by IXIA                                           #
+#    Copyright © 1997 - 2018 by IXIA                                           #
 #    All Rights Reserved.                                                      #
 #                                                                              #
 ################################################################################
@@ -43,29 +43,29 @@
 ################################################################################
 
 ################################################################################
-##                                                                              #
-## Description:                                                                 #
-##    This script intends to demonstrate how to use NGPF SR-IPv6-SRH Traffic    #
-##    Using Low Level Perl API                                                  #
-##   1.It will create 1 IPv6 SR Ext Stack in topology1 and in topology2 will    #
-##     contain only ipv6 stack.                                                 #
-##	2.Configure the multipliers for IPv6 SR Ext                                 #
-##	3.Set values of 'Segment List Max Index[n]'                                 #
-##	4.Disable the checkbox 'Use This Device As Ingress' for the 2nd Tunnel      #
-##     in 1st device of IPv6 SR Ext.                                            #
-##	5.Set values to 'Segment Left' field for the 2nd tunnel of device 1         #
-##	6.Disable the checkbox 'Enable Segment 4' for the 1st Tunnel in 1st         #
-##	  device of IPv6 SR Ext                                                     #
-##	7.Create IPv6 PrefixPool behind both topologies                             #
-##	8.Start All protocol                                                        #
-##	9.Create TrafficItem between NetworkGroup1 to NetworkGroup2                 #
-##  10.Apply and Start Traffic                                                  #
-##  11.Print Traffic Flow Statistics                                            #
-##  12.Stop Traffic                                                             #
-##  13.Stop Protocols	                                                        #
-##                                                                              #
-##                                                                              #
-#################################################################################
+#                                                                              #
+# Description:                                                                 #
+#    This script intends to demonstrate how to use NGPF SR-IPv6-SRH Traffic    #
+#    Using Low Level Perl API                                                  #
+#   1.It will create 1 IPv6 SR Ext Stack in topology1 and in topology2 will    #
+#     contain only ipv6 stack.                                                 #
+#	2.Configure the multipliers for IPv6 SR Ext                                #
+#	3.Set values of 'Segment List Max Index[n]'                                #
+#	4.Disable the checkbox 'Use This Device As Ingress' for the 2nd Tunnel     #
+#     in 1st device of IPv6 SR Ext.                                            #
+#	5.Set values to 'Segment Left' field for the 2nd tunnel of device 1        #
+#	6.Disable the checkbox 'Enable Segment 4' for the 1st Tunnel in 1st        #
+#	  device of IPv6 SR Ext                                                    #
+#	7.Create IPv6 PrefixPool behind both topologies                            #
+#	8.Start All protocol                                                       #
+#	9.Create TrafficItem between NetworkGroup1 to NetworkGroup2                #
+#  10.Apply and Start Traffic                                                  #
+#  11.Print Traffic Flow Statistics                                            #
+#  12.Stop Traffic                                                             #
+#  13.Stop Protocols	                                                       #
+#                                                                              #
+#                                                                              #
+################################################################################
 
 ################################################################################
 # Please ensure that PERL5LIB environment variable is set properly so that 

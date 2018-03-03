@@ -1,5 +1,5 @@
 # -*- coding: cp1252 -*-
-#################################################################################                                                                              ##    Copyright © 1997 - 2017 by IXIA                                           ##    All Rights Reserved.                                                      ##                                                                              #################################################################################
+#################################################################################                                                                              ##    Copyright © 1997 - 2018 by IXIA                                           ##    All Rights Reserved.                                                      ##                                                                              #################################################################################
 
 ################################################################################
 #                                                                              #
@@ -51,7 +51,7 @@
 #                                                                              #
 #    Configuration flow of the script is as follow:                            #
 #       i.    Adding of Ethernet and IP within both topologies,                # 
-#       ii.   Ading and configuration of OSPF and LDP router over IP           #
+#       ii.   Adding and configuration of OSPF and LDP router over IP           #
 #       iii.  Adding of Route Range behind DG of each topology                 #
 #       iv.   Configuring loopback address as Router ID                        #
 #       v.    Adding of chain DG for both topologies, act as PE router         #
@@ -69,7 +69,7 @@
 #    6. Start the L2-L3 traffic.                                               #
 #    7. Retrieve L2-L3 traffic stats.                                          #
 #    8. Stop L2-L3 traffic.                                                    #
-#    9. Stopallprotocols.                                                      #
+#    9. Stop all protocols.                                                    #
 ################################################################################
 
 ################################################################################

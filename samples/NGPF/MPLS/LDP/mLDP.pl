@@ -1,6 +1,6 @@
 ################################################################################
 #                                                                              #
-#    Copyright © 1997 - 2017 by IXIA                                           #
+#    Copyright © 1997 - 2018 by IXIA                                           #
 #    All Rights Reserved.                                                      #
 #                                                                              #
 ################################################################################
@@ -56,7 +56,7 @@
 #    6. Retrieve protocol learned info.                                        #
 #    7. Change label and LSP Count per Root & apply change on the fly          #
 #    8. Retrieve protocol learned info again and notice the difference with    #
-#       previouly retrieved learned info.                                      #
+#       previously retrieved learned info.                                     #
 #    9. Configure IPv4 & IPv6 L2-L3 traffic.                                   #
 #   10. Retrieve L2-L3 traffic stats.                                          #
 #   11. Stop L2-L3 traffic.                                                    #
