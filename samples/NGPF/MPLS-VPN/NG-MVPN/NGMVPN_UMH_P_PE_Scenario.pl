@@ -1,6 +1,6 @@
 ################################################################################
 #                                                                              #
-#    Copyright © 1997 - 2017 by IXIA                                           #
+#    Copyright © 1997 - 2018 by IXIA                                           #
 #    All Rights Reserved.                                                      #
 #                                                                              #
 ################################################################################
@@ -61,7 +61,7 @@
 #         iii.    Enabling of TE(Traffic Engineering) and configuring loopback  #
 #                         address as Router ID                                  #
 #         iv.     Adding of chain DG for behind both Sender/Receiver PE Router  #
-#         v.      Adding of RSVP-TE LSPs(both P2P adn P2MP) and mVRF over       #
+#         v.      Adding of RSVP-TE LSPs(both P2P and P2MP) and mVRF over       #
 #                     BGP within chain DG                                       #
 #         vi.     Configuring Parameters in mVRF at sender PE Router            #
 #         vii.    Adding mVRF Route Range(both IPv4 and v6) as Sender Site      #

@@ -1,6 +1,6 @@
 ################################################################################
 #                                                                              #
-#    Copyright © 1997 - 2017 by IXIA                                           #
+#    Copyright © 1997 - 2018 by IXIA                                           #
 #    All Rights Reserved.                                                      #
 #                                                                              #
 ################################################################################
@@ -67,7 +67,7 @@
 #        Step 6. Again Learned Info display to see OTF changes take place       #
 #        Step 7. Configuration L2-L3 Traffic                                    #
 #        Step 8. Apply and Start of L2-L3 traffic.                              #
-#        Step 9. Diplay of L2-L3  traffic Stats.                                #
+#        Step 9. Display of L2-L3  traffic Stats.                               #
 #        Step 10.Stop of L2-L3 traffic.                                         #
 #        Step 11.Stop of all protocols.                                         #
 #################################################################################

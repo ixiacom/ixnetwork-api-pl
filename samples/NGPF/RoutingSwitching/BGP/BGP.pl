@@ -1,6 +1,6 @@
 ################################################################################
 #                                                                              #
-#    Copyright © 1997 - 2017 by IXIA                                           #
+#    Copyright © 1997 - 2018 by IXIA                                           #
 #    All Rights Reserved.                                                      #
 #                                                                              #
 ################################################################################
@@ -59,7 +59,7 @@
 #    8. Configure application traffic.                                         #
 #    9. Start the L2-L3 traffic.                                               #
 #   10. Start the application traffic.                                         #
-#   11. Retrieve Appilcation traffic stats.                                    #
+#   11. Retrieve Application traffic stats.                                    #
 #   12. Retrieve L2-L3 traffic stats.                                          #
 #   13. Stop L2-L3 traffic.                                                    #
 #   14. Stop Application traffic.                                              #
