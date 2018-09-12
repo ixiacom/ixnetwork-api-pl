@@ -1,6 +1,6 @@
 ################################################################################
 #                                                                              #
-#    Copyright © 1997 - 2018 by IXIA                                           #
+#    Copyright 1997 - 2018 by IXIA Keysight                                    #
 #    All Rights Reserved.                                                      #
 #                                                                              #
 ################################################################################
@@ -242,13 +242,13 @@ $ixNet->setMultiAttribute($ldp2, '-leafRangesCountV4', '1');
 $ixNet->commit();
 
 print("Changing Root Address in Root Ranges behind Topology 1\n");
-my $rootRanges = ($ixNet->getList($ldp1, 'rootRanges'))[0];
+my $rootRanges = ($ixNet->getList($ldp1, 'ldpRootRangeV4'))[0];
 my $rootRange_rootAddrCount = $ixNet->getAttribute($rootRanges, '-rootAddress');
 $ixNet->setMultiAttribute($rootRange_rootAddrCount.'/counter', '-start', '15.1.1.1');
 $ixNet->commit();
 
 print("Changing Root Address in Leaf Ranges behind Topology 2\n");
-my $leafRanges = ($ixNet->getList($ldp2, 'leafRanges'))[0];
+my $leafRanges = ($ixNet->getList($ldp2, 'ldpLeafRangeV4'))[0];
 my $leafRange_rootAddrCount = $ixNet->getAttribute($leafRanges, '-rootAddress');
 $ixNet->setMultiAttribute($leafRange_rootAddrCount.'/counter', '-start', '15.1.1.1');
 $ixNet->commit();;
@@ -367,10 +367,6 @@ print("***************************************************\n");
 ################################################################################
 # 5. Change the label, number of LSP Count And apply changes On The Fly (OTF).
 ################################################################################
-print("Changing LSP Count per root On The Fly behind Ingress Router on Topology 1\n");
-my $lsp1 = $ixNet->getAttribute($rootRanges, '-lspCountPerRoot');
-$ixNet->setMultiAttribute($lsp1.'/singleValue', '-value', '5');
-
 print("Changing LSP Count per root On The Fly behind Ingress Router on Topology 2\n");
 my $lsp2 = $ixNet->getAttribute($leafRanges, '-lspCountPerRoot');
 $ixNet->setMultiAttribute($lsp2.'/singleValue', '-value', '5');
@@ -419,12 +415,12 @@ $ixNet->commit();
 
 $trafficItem1    = ($ixNet->remapIds($trafficItem1))[0];
 my $endpointSet1 = $ixNet->add($trafficItem1, 'endpointSet');
-my @source       = ($ldp1.'/rootRanges');
+my @source       = ($ldp1.'/ldpRootRangeV4');
 
 $ixNet->setMultiAttribute($endpointSet1,
     '-name',                  'EndpointSet-1',
     '-scalableSources',       (''),
-    '-multicastReceivers',    [[$ldp2.'/leafRanges','0','0','0']],
+    '-multicastReceivers',    [[$ldp2.'/ldpLeafRangeV4','0','0','0']],
     '-scalableDestinations',  (''),
     '-ngpfFilters',           (''),
     '-trafficGroups',         (''),
@@ -451,7 +447,7 @@ my $endpointSet2 = $ixNet->add($trafficItem2, 'endpointSet');
 $ixNet->setMultiAttribute($endpointSet2,
     '-name',                  'EndpointSet-2',
     '-scalableSources',       (''),
-    '-multicastReceivers',    [[$ldp2.'/leafRanges','0','0','0']],
+    '-multicastReceivers',    [[$ldp2.'/ldpLeafRangeV4','0','0','0']],
     '-scalableDestinations',  (''),
     '-ngpfFilters',           (''),
     '-trafficGroups',         (''),
