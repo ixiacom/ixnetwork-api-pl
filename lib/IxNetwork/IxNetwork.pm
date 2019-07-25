@@ -29,6 +29,14 @@ use validate;
 
 package IxNetwork;
 
+our $VERSION = '9.00';
+
+=head1 SYNOPSIS
+IxNetwork is the Perl package for the IxNetwork Low Level API that allows you to configure and run IxNetwork tests.
+=head1 IMPORTANT LINKS
+=over 4
+=item * L<https://github.com/ixiacom/ixnetwork-api-pl>
+
 =head1 new
 =cut
 use constant NL => "\r\n";
